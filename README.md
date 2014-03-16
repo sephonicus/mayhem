@@ -1,6 +1,6 @@
 # Mayhem
 
-TODO: Write a gem description
+Text data making too much sense? Unleash Mayhem on it!
 
 ## Installation
 
@@ -16,9 +16,17 @@ Or install it yourself as:
 
     $ gem install mayhem
 
+A thesaurus file is necessary for Mayhem to do its business. Download the [Moby Thesaurus](http://icon.shef.ac.uk/Moby/mthes.html "the Moby Thesaurus") and move mobythes.aur to the gem's lib/data directory.
+
 ## Usage
 
-TODO: Write usage instructions here
+First off, require Mayhem:
+
+    require 'mayhem'
+
+Now, when you want to synonymize a string, just pass it through Mayhem's synonymizer:
+
+    Mayhem.synonymize(your_string)
 
 ## Contributing
 
