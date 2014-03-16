@@ -1,3 +1,3 @@
-module Mayhem
-  VERSION = "0.0.1"
+class Mayhem
+  VERSION = '0.0.1'
 end

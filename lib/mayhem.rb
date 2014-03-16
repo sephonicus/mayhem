@@ -1,5 +1,2 @@
-require "mayhem/version"
-
-module Mayhem
-  # Your code goes here...
-end
+require 'mayhem/version'
+require 'mayhem/synonymization'
