@@ -16,8 +16,6 @@ Or install it yourself as:
 
     $ gem install mayhem
 
-A thesaurus file is necessary for Mayhem to do its business. Download the [Moby Thesaurus](http://icon.shef.ac.uk/Moby/mthes.html "the Moby Thesaurus") and move mobythes.aur to the gem's lib/data directory.
-
 ## Usage
 
 First off, require Mayhem:
