@@ -3,16 +3,20 @@ require 'zlib'
 class Mayhem
   class << self
     def synonymize(input)
-      input.to_s.split("\s").map do |word|
-        if related_terms = lookup_table[word]
-          related_terms.sample
-        else
-          word
-        end
-      end.join(' ')
+      text  = input.to_s
+      words = text.split("\s")
+      words.map { |word| synonym(word) || word }.join(' ')
     end
 
     private
+
+    def synonym(word)
+      candidate_list = lookup_table[word]
+      candidate = candidate_list.sample if candidate_list
+      if candidate && candidate != ''
+        candidate
+      end
+    end
 
     def lookup_table
       return @lookup_table if @lookup_table
