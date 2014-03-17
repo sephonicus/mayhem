@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Mayhem::VERSION
   spec.authors       = ['Matthew Hassfurder']
   spec.email         = ['sephonicus@gmail.com']
-  spec.description   = 'Mayhem is a tool sowing discord amongst your textual data.'
+  spec.description   = 'Mayhem is a tool for sowing discord amongst your textual data.'
   spec.summary       = 'Mayhem.'
   spec.homepage      = ''
   spec.license       = 'MIT'
