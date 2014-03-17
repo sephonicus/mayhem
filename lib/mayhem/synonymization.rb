@@ -3,9 +3,15 @@ require 'zlib'
 class Mayhem
   class << self
     def synonymize(input)
-      text  = input.to_s
-      words = text.split("\s")
-      words.map { |word| synonym(word) || word }.join(' ')
+      text = input.to_s
+      components = text.split(/\b/)
+      components.map do |component|
+        if component =~ /\A\w+\z/
+          synonym(component) || component
+        else
+          component
+        end
+      end.join
     end
 
     private
