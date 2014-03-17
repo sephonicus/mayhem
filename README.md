@@ -24,7 +24,10 @@ First off, require Mayhem:
 
 Now, when you want to synonymize a string, just pass it through Mayhem's synonymizer:
 
+    your_string = 'Synonym: a word or phrase that means exactly or nearly the same as another word or phrase in the same language, for example shut is a synonym of close.'
+
     Mayhem.synonymize(your_string)
+    => "Synonym: a tome or musical that canvass all or noways the nonetheless as another trade or musical in the notwithstanding language, type example toggle expanding a Doppelganger of close."
 
 ## Contributing
 
